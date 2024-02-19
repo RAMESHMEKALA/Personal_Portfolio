@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family:"Poppins",sans-serif;
+}
+:root{
+    --bg-color: #111111;
+    --second-bg-color: #151515;
+    --text-color: white;
+    --main-color: #04fffb;
+    --hover-color: pink;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+label{
+    color: var(--main-color);
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+.header{
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font: 800;
+    cursor: hand;
+    transition: 0.3s ease-in-out;
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 6rem;
+    font-weight: 300;
+    transition:0.3s ease-in-out;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 10rem;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+}
+.container .left{
+    width: 60%;
+}
+.container .left h1{
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.container .left label{
+    text-shadow: 2px 2px var(--main-color);
+}
+.container .right{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    margin-left: 20%;
+
+}
+.right img{
+    height: 100%;
+}
+button{
+    background-color: var(--main-color);
+    border: none;
+    width: 100px;
+    color: black;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: hand;
+}
+button:hover{
+    background-color: var(--main-color);
+    color: pink;
+    cursor: hand;
+}
